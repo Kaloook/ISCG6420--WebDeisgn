@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>
+        <input type="range " min="10" max="75" id="myRange">
+        <button type="button" onclick="changetextSize()">change text size</button>
+    </p>
+    <p id="myText">javacan chagwa</p>
+    <script>
+        function changetextSize(){
+            var atext = document.getElementById("mytext");
+            var newSzie =document.getElementById("myrange").value;
+            atext.style.fontSize= newSzie+"px";
+
+        }
+    </script>
+</body>
+</html>

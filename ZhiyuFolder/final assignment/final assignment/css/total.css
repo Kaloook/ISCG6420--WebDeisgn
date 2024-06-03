@@ -1,0 +1,61 @@
+.step3 {
+  width: 80%;
+  padding: 20px;
+}
+
+.totalCon {
+  height: 80%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.toLeft {
+  width: 50%;
+  height: 100%;
+  padding: 20px;
+  border-right: 1px solid #000;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.toCon {
+  padding-top: 10px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.toCon p {
+  margin-bottom: 10px;
+  font-size: 20px;
+}
+
+.toCon span {
+  color: #343a98;
+  font-size: 20px;
+  align-self: center;
+}
+
+.toRight {
+  width: 50%;
+  height: 100%;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.totalBot {
+  height: 20%;
+  width: 100%;
+  color: #343a98;
+  font-size: 40px;
+  font-weight: bold;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}

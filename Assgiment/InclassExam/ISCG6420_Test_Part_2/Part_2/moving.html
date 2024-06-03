@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="content-type" content="text/html;" charset="UTF-8">
+    <style>
+        .mybackground {
+            position: relative;
+            overflow: hidden;
+            width: 600px;
+            height: 600px;
+            background-image: url(grass_bg.jpg);
+        }
+
+        .mybackground .bee {
+            position: absolute;
+            top: 100px;
+            left: 100px;
+            background-image: url(bee.gif);
+            width: 140px;
+            height: 105px;
+            padding-top: 0px;
+            text-align: center;
+
+            color: black;
+            white-space: nowrap;
+        }
+
+        .myButton {
+            background-color: yellow;
+            width: 90px;
+            height: 30px;
+            border: 5px solid green;
+            padding: 0px 0px 0px 40px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="mybackground">
+        <div style="left: 200px; top: 500px;" class="bee" id="mybee"></div>
+    </div>
+    <div class="myButton" id="start"> Start </div>
+    
+    <script type="text/javascript">
+        // Part 2 code goes here
+        const bee = document.getElementById("mybee");
+        const start = document.getElementById("start");
+        let x = 200;
+        let y = 500;
+        let audion =new Audio('bee.mp3');
+        
+        function moveBee() {
+        x -= 2;
+        y -= 2;
+        bee.style.left = x + 'px';
+        bee.style.top = y + 'px';
+        console.log(x, y);
+        if (y <= 0) {
+            x += 2;
+            y += 2;
+            bee.style.left = x + 'px';
+            bee.style.top = y + 'px';
+        }
+        audion.play();
+    }
+
+    let  direction= "a"
+function abcd (){
+    if (direction === 'a') {
+            x -= 2;
+            y -= 2;
+            bee.style.left = x + 'px';
+            bee.style.top = y + 'px';
+            audion.play();
+            if (y <= 250) {
+                direction = 'b';
+            }
+        } else if (direction === 'b') {
+            x += 2;
+            y -= 2;
+            bee.style.left = x + 'px';
+            bee.style.top = y + 'px';
+            audion.play();
+            if (y <= 0) {
+                direction = 'c';
+            }
+        } else if (direction === 'c') {
+            x += 2;
+            y += 2;
+            bee.style.left = x + 'px';
+            bee.style.top = y + 'px';
+            audion.play();
+            if (y >= 250) {
+                direction = 'd';
+            }
+        } else if (direction === 'd') {
+            x -= 2;
+            y += 2;
+            bee.style.left = x + 'px';
+            bee.style.top = y + 'px';
+            if (y >= 500) {
+                direction = 'e'
+                audion.pause()
+           
+            }
+        }
+        console.log(x, y);
+    }
+    
+
+
+
+
+    
+    document.getElementById('start').addEventListener('click', function() {
+        setInterval(abcd, 30);
+    });
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="form-pages.css">
+</head>
+<body>
+    <section>
+        <h2 class="underline">form pages</h2>
+        <div class="container-half card"></div>
+            <subtitle class="card-title">input form</subtitle>
+            <progess value="10" max="100"></progess>
+            <div id="from-page1" class="from-page" style="dispaly: block">
+            <div>
+                <h3>personal details</h3>
+            </div>
+            <div>
+            <label for="firstname" class="row">First Name:
+                <input type="text" id="name-first">
+            </label>    
+            <label for="lastname" class="row">last Name:
+                <input type="text" id="name-last">
+            </label>    
+            
+            </div>
+            <div>
+            <button class="next" type="button" onclick="showPage(2)">
+                next pages
+            </button>
+            </div>
+        </div>
+
+            <div id="from-page2" class="from-page" style="dispaly:none">
+            <div>
+                <h3>VehicleDetails</h3>
+            </div>
+            <div>
+                <div>
+                    <label for="vehicle-sedan">
+                        <input type="radio"
+                         id="vehicle-sedan"
+                         name=vehicle 
+                         value="sedan"
+                         checked="true"/>
+                         van
+
+                    </label>
+                    <label for="vehicle-SUV">
+                        <input type="radio"
+                                id="vehicle-SUV"
+                                name="vehicle"
+                                value="SUV"/>
+                                SUV
+                    </label>
+                </div>
+                    <div>
+                        <label for="vehicle-make">make
+                        <select>
+                            <option value="Toyota">Toyota</option>
+                            <option value="Mazda">Mazda</option>
+                            <option value="Honda">Honda</option>
+                        </select>
+                        </label>
+                    </div>
+                </div>
+                    <div>
+                        <button class="next" type="button" onclick="showPage(3)">
+                            next pages
+                        </button>
+                            <button class="previous" type="button" onclick="showPage(1)">
+                            previous pages
+                        </button>
+                    </div>
+                </div>
+            </div>
+            </div>
+            <div id="from-page3" class="from-page" style="dispaly:none;"></div>
+            <div>
+                    <h3>Summary</h3>
+            </div>
+                <div class="row">Name:
+                    <span id="summary-name"></span>
+                </div>
+                <div class="row">
+                    vehicle: <span id="summary-Vehicle"></span>
+                </div>
+
+                <div>
+                    <button class="previous" type="button" onclick="showPage(2)">
+                        previous page
+                    </button>
+                    <button class="next" type="button" onclick="SubmitData()">
+                    Submit
+                    </button>
+                </div>
+        <div class="container-half card">
+            <subtitle class="card-title">collected data</subtitle>
+            <table id="collected-data">
+                <thead>
+                    <td>Name</td>
+                    <td>Vehicle</td>
+                </thead>
+            </table>
+        </div>
+    </section>
+    <script src="page.js"></script>
+</body>
+</html>

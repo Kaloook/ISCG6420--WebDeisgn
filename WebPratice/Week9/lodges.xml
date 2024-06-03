@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<lodges 
+xmlns:xis="https;//www.w3/org/2001/XMLSchema-instance"
+>
+
+<book>
+    <ISDN>0001</ISDN>
+    <author>John Smith</author>
+    <title>My memoirs</title>
+    <category>autobiography</category>
+    <cost>19.99</cost>
+</book>
+
+<book>
+    <ISDN>0002</ISDN>
+    <author>Kate Westmere</author>
+    <title>Auckland Zoo</title>
+    <category>Nonfiction</category>
+    <cost>35.00</cost>
+</book>
+
+<book>
+    <ISDN>0003</ISDN>
+    <author>Marvin Henare</author>
+    <title>Hauraki Deep</title>
+    <category>Fiction</category>
+    <cost>28.99</cost>
+</book>
+
+</lodges>

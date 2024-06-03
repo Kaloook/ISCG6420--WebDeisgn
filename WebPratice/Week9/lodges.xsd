@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<xs:schema xmlns:xs="https://www.w3.org/2001/XMLSchema">
+
+<xs:element name="books">
+    <xs:complextype>
+        <xs:squence>
+            <xs:element name="book">
+        <xs:complextype>
+            <xs:squence>
+                <xs:element name="ISDB" type="xs:interger"/>
+                <xs:element name="author" type="xs:string"/>    
+                <xs:element name="title" type="xs:string"/>    
+                <xs:element name="category" type="xs:string"/>
+                <xs:element name="cost" type="xs:float"/>
+            </xs:squence>
+        </xs:complextype>
+    </xs:element>
+    <xs:element name="book">
+        <xs:complextype>
+            <xs:squence>
+                <xs:element name="ISDB" type="xs:interger"/>
+                <xs:element name="author" type="xs:string"/>    
+                <xs:element name="title" type="xs:string"/>    
+                <xs:element name="category" type="xs:string"/>
+                <xs:element name="cost" type="xs:float"/>
+            </xs:squence>
+        </xs:complextype>
+                </xs:element>
+            </xs:squence>
+        </xs:complextype>
+    </xs:element>
+</xs:schema>

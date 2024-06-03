@@ -1,0 +1,22 @@
+#Bookingsite {
+    position: relative;
+    top: 15px;
+    left: 50px;
+    margin-top: 20mm ;
+    width: 500px;
+    height: 600px;
+    float: left;
+    background-color: bisque;
+    }
+
+progress {
+        margin-top: 20px;
+        width: 78%;
+        background-color:darkgray;
+        height: 20px;
+        border-radius: 0.5em;
+    }
+    
+    progress::-moz-progress-bar,progress::-webkit-progress-value {
+        background-color:#206E32;
+    }

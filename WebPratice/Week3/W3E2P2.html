@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>
+        <label for="color">color:</label>
+        <input type="color" name="color" id="mycolor" onchange="mychagne()">
+    </p>
+    <p>&nbsp;</p>
+    <div id="mydemo"style="width: 250px; height: 80px; background: yellow;"></div>
+    <script>
+        function mychagne(){
+
+            var y =document.getElementById("mydemo");
+            var showColor = document.getElementById("mycolor").value;
+            y.style.backgroundColor = showColor;
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <title>Marks</title>
+    <style>
+        table {
+            border: 2px solid darkblue;
+            margin: 10px 0px;
+        }
+
+        td {
+            padding: 10px 20px;
+            background-color: rgba(112, 154, 189, 0.39);
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Select Mark</h1>
+    <button type="button" onclick="display_inputs()">Display Marks</button>
+    <table id="dispMarks"></table>
+
+    <script>
+        // Part 3 code goes here
+      
+function display_inputs(){
+    const tableRow = document.querySelector('tr');
+    const cell = document.createElement('td');
+    const radioButton = document.createElement('input');
+    const label = document.createElement('label');
+    radioButton.type = 'radio';
+    for (let i = 1; i <= 5; i++) {
+        const tableRow = document.querySelector('tr');
+    const cell = document.createElement('td');
+    const radioButton = document.createElement('input');
+    const label = document.createElement('label');
+    radioButton.type = 'radio';
+        radioButton.type = 'radio';
+        radioButton.id = `cell${i}`;
+        radioButton.value = i; 
+        label.htmlFor = `cell${i}`;
+        label.textContent = i;}
+
+        cell.appendChild(radioButton);
+        cell.appendChild(label);
+        tableRow.appendChild(cell);
+       
+
+        radioButton.addEventListener('change', function() {
+            alert(`You selected' + label.textContent`);
+        });
+}
+
+
+
+        
+    </script>
+</body>
+
+</html>

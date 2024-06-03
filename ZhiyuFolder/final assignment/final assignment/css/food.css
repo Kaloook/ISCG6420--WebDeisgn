@@ -1,0 +1,109 @@
+.step2 {
+  flex-direction: row;
+  justify-content: space-between;
+  width: 80%;
+  padding: 20px;
+}
+
+.foodLeft {
+  display: flex;
+  flex-direction: column;
+  border-right: 1px solid #343a98;
+  width: 70%;
+  height: 350px;
+  overflow-y: auto;
+  padding: 0 10px;
+}
+
+.foList {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #343a98;
+  padding: 10px 0;
+  position: relative;
+}
+
+.foList img {
+  margin-right: 20px;
+  width: 90px;
+  height: 90px;
+  border-radius: 15px;
+}
+
+.foTabel {
+  flex: 1;
+  height: 90%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.foTabel h3 {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  color: #343a98;
+  padding-right: 20px;
+}
+
+.foTabel p {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  width: 500px;
+}
+
+.foTabel p,
+.foTabel span {
+  font-size: 14px;
+  color: #333;
+}
+
+.foodBtn {
+  position: absolute;
+  right: 10px;
+  bottom: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.foodBtn .add,
+.foodBtn .reduce {
+  cursor: pointer;
+  width: 40px;
+  font-size: 20px;
+  font-weight: bold;
+  height: 30px;
+  border-radius: 8px;
+  color: #fff;
+  background: #343a98;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.foodBtn .foodNum {
+  font-size: 18px;
+  padding: 0 10px;
+}
+
+.foodRight {
+  width: 30%;
+  height: 100%;
+}
+
+.totalPrice {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #343a98;
+  font-size: 40px;
+  font-weight: bold;
+}
+.totalPrice p{
+  padding-bottom: 10px;
+}

@@ -1,0 +1,112 @@
+<html>
+<head>
+<title>IT Company - Staff</title>
+<style>
+#dispStaff {
+	background-color: lightgreen;
+}
+#dispStaff {
+	padding: 20px;
+}
+#dispStaff, td {
+	font-family: sans-serif, courier;
+	padding: 20px;
+}
+img{
+	border-radius:20px;
+	width: 100px;
+}
+.staffnames {
+	font-size: 25px;
+	font-family: Georgia, serif;
+}
+
+.image-Bella{
+	background-image: url(Bella.jpg);
+	background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+	width: 30px;
+	height: 30px;
+}
+
+.image-Bob{
+	background-image: url(Bob.jpg);
+	background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+	width: 30px;
+	height: 30px;
+}
+
+.image-Jerry{
+	background-image: url(Jerry.jpg);
+	background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+	width: 30px;
+	height: 30px;
+}
+
+.image-Mary{
+	background-image: url(Mary.jpg);
+	background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+	width: 30px;
+	height: 30px;
+}
+</style>
+</head>
+<body >
+
+<h1>IT Company</h1>
+<button type="button" >Display staff</button>
+<table id="dispStaff">
+	<tr> 
+		<th>Bella</th>
+		<th>Bob</th>
+		<th>Jerry</th>`
+		<th>Mary</th>
+	</tr>
+	<tr>
+		<th class="image-Bella" id="Bella" onclick="displayStaff()"></th>
+		<th class="image-Bob"  id="Bob" onclick="displayStaff()"></th>
+		<th class="image-Jerry" id="Jerry" onclick="displayStaff()"></th>
+		<th class="image-Mary" id="Mary"onclick="displayStaff()"></th>
+	</tr>
+</table>
+
+</body>
+</html>
+<script>
+	let staffArray = [];
+staffArray.push({
+	name : "Bella",
+	image:"Bella.jpg",
+})
+staffArray.push({
+	name : "Bob",
+	image:"Bob.jpg",
+})
+staffArray.push({
+	name : "Jerry",
+	image:"Jerry.jpg",
+})
+staffArray.push({
+	name : "Mary",
+	image:"Mary.jpg",
+})
+
+function displayStaff() {
+	const table = document.getElementById("dispStaff");
+	const image = document.getElementsByClassName("image-Bella");
+	const name = image.innerHTML
+	console.log(image)
+	console.log(name)
+	const message = "I am " + name
+	alert(message)
+	console.log(message)
+}
+// your code
+</script>

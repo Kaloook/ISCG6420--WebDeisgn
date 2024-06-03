@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css"/>
+    <link rel="stylesheet" href="./style2.css"/>
+    <link rel="stylesheet" href="./style3.css"/>
+    <title>Document</title>
+    
+
+</head>
+<style>
+</style>
+<body>
+    <section>
+        <div id="adWrapper">
+            <div id="adScence1">
+            <div id="SunsetImage">
+                <a href="http://www.piha.co.nz"> 
+                <img 
+                src="sunset-from-piha-beach.jpg" 
+                alt="viewimage"/>
+                </a> 
+             <h1 id="Piha">Piha</h1>
+            <h2 id="Sunset"> Sunset</h2>
+            <h3 id="Excellent">Excellent View</h3> 
+            </div>
+        </div>
+                <div id ="adScence2">
+                    <div id="northimager">
+                        <a href="http://www.piha.co.nz"> 
+                        <img 
+                        src="Looking-north.jpg" 
+                        alt="viewimage2"/>
+                        </a> 
+                    </div>  
+                    <div id="PihaB"> Piha </div>
+                    <div id="ViewFN"> Piha Beach view from north </div>
+                </div>
+                <div id = "name">
+                    <div id=" student name ">Jiale Zhao</div>
+                    <div id=" student ID ">1496804</div>
+                </div>
+                
+            </div>
+        
+
+<div id="Bookingsite"> 
+    <div style= font-size:60px color = red;>Booking From</div>
+   
+            <div class="container-half card">
+                <div id="page1" class="form-page"  style="display: block;">
+                    <div> <h3>
+                        Personal Details
+                    </h3></div>
+               
+            <div>
+                <label for="first-name">First Name
+                <input type="text" id="first-name" name="user_fname" required /><br><br> </label>
+        
+
+                <label for="last-name">Last Name
+                <input type="text" id="last-name" name="user_lname" required /><br><br>  </label>
+                </div>
+            <div id="progress"></div>
+                
+
+            <div>
+                <button class="next" type="button" onclick="showPage(2)">
+                    Next Page 2
+                </button>
+            </div>
+
+        </div>
+
+            <div id="page2" class="form-page"  style="display: none;">
+                <div> <h3>
+                    Email Details
+                </h3>
+            </div>
+            <div><label for="Email">
+                Email
+                <input type="text"  id="email" name="user_email" required /></label><br><br>
+            </div>
+            <div>
+
+                <button class="previous" type="button" onclick="showPage(1)">
+                    Previous Page 1
+                </button>
+                <button class="next" type="button" onclick="showPage(3)">
+                    Next Page 3
+                </button>
+            </div>
+            <div id="progress"></div>
+            </div>
+                
+            <div id="page3"  class="form-page" style="display: none">  
+                <div>
+                    
+                <label for="people"> Number of people</label>
+                <input type="number" id="people" name="numberofpeople" required /><br><br></div>
+
+                <div>
+                <label for="when">When you arrvial </label>
+                <input type="date"  id="when" name="whenarrvial" required /><br><br></div>
+                <div>
+                <label for="equipment">
+                    Do you need to use equipment (EG: Swimming goggles, surf board)</label>
+                    <form action="/action_page.php">
+                        <input type="checkbox" id="Yes" name="Yes" value="Yes">
+                        <label for="Yes"> Yes</label><br>
+                        <input type="checkbox" id="No" name="No" value="No">
+                        <label for="No"> No</label><br>
+                      </form><br><br>
+                <label for="agreement">
+                    Do you agree with the local native conservation initiative agreemen</label>
+                        <input type="radio" id="agreement" name="agreement" value="agree">
+                </div>
+                <button class="Previous" type="button" onclick="showPage(2)">Previous Page 2
+                    </button>
+                <button class="next" type="button" onclick="showPage(4)">Next Page 4
+                    </button> 
+                </div>
+                    </div>
+                
+            <div id="page4"  class="form-page" style="display: none;"> 
+                <div>
+               <div class="row">
+                Name:<span id ="summary-name"></span>
+               </div>
+               <div class="row">
+                Email: <span id="summary-email"></span>
+               </div>
+               <div class="row">
+                Time :<span id="sumarry-time"></span>
+               </div>
+               <div class="row">
+                People: <span id="summary-people"></span>
+               </div>
+               <div class="row">
+                equipment: <span id="summary-equipment"></span>
+               </div>
+               <div id="progress"></div>
+               <div>
+                    <button class="next" type="button" onclick="showPage(3)">Previous Page 3
+                        </button>
+                    <button class="next" type="button" onclick="submitData()">Submit
+                        </button>
+                    </div>
+                 </div>
+            
+            </div>
+       <div class="container-half card">
+            <subtitle class="card-title">Collected Data </subtitle>
+            <table id = "collected-data">
+                <thead>
+                    <td>name</td>
+                    <td>Email</td>
+                    <td>Time</td>
+                    <td>people number</td>
+                    <td>equipment</td>
+                </thead>
+            </table>
+       </div>
+   </div> 
+    
+
+   <div id="miter10ad">
+    <div id="adReplay">
+        <i class="fa-solid fa-circle-play"></i>
+    </div>
+
+<div id="imger1" class="mySlides">
+    <div id="cookingimg">
+        <a href="https://www.mitre10.co.nz/"> 
+        <img  src="Cooking.jpg" alt="cooking"/>
+        </a> 
+     <h3 id="statement1">Create your</h3>
+    <h4 id="statement2"> dream kitchen</h4>
+    </div>
+</div>
+        <div id ="imger2" class="mySlides">
+            <div id="kitchen1">
+                <a href="https://www.mitre10.co.nz/"> 
+                <img src="kitchen1.jpg" alt="kitchen1"/>
+                </a> <div id="statement3">On trend</div>
+            </div>  
+            
+           
+        </div>
+
+        <div id ="imger3" class="mySlides">
+            <div id="kitchen2">
+                <a href="https://www.mitre10.co.nz/"> 
+                <img 
+                src="kitchencloseup.jpg" 
+                alt="kitchen2"/>
+                </a> 
+            </div>  
+            <h6 id="statement4">And on</h6>
+            <h7 id="statement5">Budget</h7>
+        </div>
+        
+        <div id = "contract" class="mySlides">
+            <div id=" student name ">Jiale Zhao</div>
+            <div id=" student ID ">1496804</div>
+        </div>
+        
+    </div>
+ <script>
+    var myIndex = 0;
+sliceshow();
+
+function sliceshow() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}    
+  x[myIndex-1].style.display = "block";  
+  setTimeout(sliceshow, 9000);    
+}
+ </script>
+    </section>
+
+    <script src="booking.js"></script>
+    <script src="https://kit.fontawesome.com/9ea8af81bf.js" crossorigin="anonymous"></script>
+</body>
+</html>

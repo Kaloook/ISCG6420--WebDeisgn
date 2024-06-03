@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="./css/index.css">
+  <link rel="stylesheet" href="./css/boat.css">
+  <link rel="stylesheet" href="./css/food.css">
+  <link rel="stylesheet" href="./css/total.css">
+</head>
+
+<body>
+  <div class="box">
+    <div class="head">
+      <h1>Online booking system</h1>
+    </div>
+    <div class="content" id="content">
+      <div class="step">
+        <div>1</div>
+        <p>Select Basic Information</p>
+      </div>
+      <div class="boat">
+        <div class="inputBox">
+          <p>Number of people:</p>
+          <input id="peopleNum" value="1" type="number" max="10" min="1">
+        </div>
+        <div class="inputBox">
+          <p>Date:</p>
+          <select id="schedDate">
+          </select>
+        </div>
+        <div class="inputBox">
+          <p>Time:</p>
+          <select id="schedTime">
+          </select>
+        </div>
+        <div class="inputBox">
+          <p>Boat name:</p>
+          <select id="boatName">
+          </select>
+        </div>
+      </div>
+      <div class="nextBox">
+        <div class="next" id="toStep2">Next step</div>
+      </div>
+    </div>
+    <div class="foot">
+      <p>Online booking system</p>
+      <span>2022 Google Privacy Policy Terms of Service</span>
+    </div>
+  </div>
+</body>
+<script src="./js/data.js"></script>
+<script src="./js/index.js"></script>
+<script src="./js/boat.js"></script>
+<script src="./js/food.js"></script>
+<script src="./js/total.js"></script>
+
+</html>
